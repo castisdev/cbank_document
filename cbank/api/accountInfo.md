@@ -6,7 +6,7 @@
 
 ### 샘플 요청
 ```
-http://127.0.0.1:8080/cbank/api/v1/test/account/info/8282-0201
+http://127.0.0.1:8080/cbank/api/v1/account/info/test/8282-0201
 ```
 
 ### 응답 (존재할 경우)
