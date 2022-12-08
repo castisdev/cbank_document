@@ -10,6 +10,7 @@ Content-Type : application/json
 |:---------------------------:|:-------------:|:-----------------------------------|
 |[ping](/cbank/api/ping.md#ping)      |      `GET`     |     /cbank/api/v1/ping                |
 |[User check](/cbank/api/userCheck.md#user-check)    |      `GET`     |     /cbank/api/v1/user/{companyId}/{userId}  |
+|[Login check](/cbank/api/loginCheck.md#account-history)    |      `POST`     |     /cbank/api/v1/login  |
 |[Account list](/cbank/api/accountList.md#account-list)    |      `GET`     |     /cbank/api/v1/accounts/{companyId}/{accountId}  |
 |[Account Info](/cbank/api/accountInfo.md#account-info)    |      `GET`     |     /cbank/api/v1/account/info/{companyId}/{accountId}  |
 |[otp](/cbank/api/otp.md#otp)    |      `POST`     |     /cbank/api/v1/otp  |
