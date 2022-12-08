@@ -69,7 +69,7 @@ Content-type: application/json
 }
 ```
 
-### 응답 (Password가 틀릴경)
+### 응답 (Password가 틀릴 경우)
 ```json
 {
     "resultCode": "400",
