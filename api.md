@@ -13,6 +13,7 @@ Content-Type : application/json
 |[Login check](/cbank/api/loginCheck.md#account-history)    |      `POST`     |     /cbank/api/v1/login  |
 |[Account list](/cbank/api/accountList.md#account-list)    |      `GET`     |     /cbank/api/v1/accounts/{companyId}/{accountId}  |
 |[Account Info](/cbank/api/accountInfo.md#account-info)    |      `GET`     |     /cbank/api/v1/account/info/{companyId}/{accountId}  |
+|[Account Name](/cbank/api/accountName.md#account-name)    |      `GET`     |     /cbank/api/v1/accountnames/{companyId}/{accountId}  |
 |[otp](/cbank/api/otp.md#otp)    |      `POST`     |     /cbank/api/v1/otp  |
 |[Account History](/cbank/api/accountHistory.md#account-history)    |      `POST`     |     /cbank/api/v1/account/history  |
 |[Transfer](/cbank/api/transfer.md#transfer)    |      `POST`     |     /cbank/api/v1/transfer  |
