@@ -14,7 +14,8 @@ Content-type: application/json
 |   Parameter  | type        |    필수    | byte |                             설명                           |
 |:------------:|:-----------:|:----------:|:----:|:-----------------------------------------------------------| 
 | userId|  String     |        O    |   64 | OTP를 요청하는 userId  |
-| sendAccountId|  String     |      O      |   64 | 보내는 계좌의 Id |
+| sendAccountId|  String     |      O      |   64 | 보내는 계좌의 Cbank Id |
+| sendAccountPwd|  String     |      O      |   64 | 보내는 계좌의 Cbank password |
 | recvAccountId|  String     |      O      |   64 | 받는 계좌의 Id |
 | amount| Long     |      O      |   32 | 이체 하는 금액 |
 | transferHistory|  String     |      O      |   256 | 이체 내역 |
@@ -27,6 +28,7 @@ http://127.0.0.1:8080/cbank/api/v1/transfer
 {
     "userId":"test1",
     "sendAccountId": "8989-0200",
+    "sendAccountPwd": "blahblah",
     "recvAccountId" : "8990-0200",
     "amount" : 1500,
     "transferHistory" : "test transfer tespt",
@@ -53,6 +55,15 @@ Content-type: application/json
     "resultCode": "200",
     "resultMsg": "",
     "now": "Sat Dec 9 21:58:45 KST 2021"
+}
+```
+
+### 응답 (계정 ID가 없거나 비밀번호가 틀릴경우)
+```json
+{
+    "resultCode": "400",
+    "resultMsg": "not valid CBank ID or Password.",
+    "now": "Sat Dec 11 21:56:57 KST 2021"
 }
 ```
 
