@@ -27,8 +27,8 @@ Content-type: application/json
 http://127.0.0.1:8080/cbank/api/v1/transfer
 {
     "userId":"test1",
-    "sendAccountId": "8989-0200",
     "sendAccountPwd": "dGVzdA==",
+    "sendAccountId": "8989-0200",
     "recvAccountId" : "8990-0200",
     "amount" : 1500,
     "transferHistory" : "test transfer tespt",
