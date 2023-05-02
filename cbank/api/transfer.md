@@ -13,9 +13,9 @@ Content-type: application/json
 ```
 |   Parameter  | type        |    필수    | byte |                             설명                           |
 |:------------:|:-----------:|:----------:|:----:|:-----------------------------------------------------------| 
-| userId|  String     |        O    |   64 | OTP를 요청하는 userId  |
+| userId|  String     |        O    |   64 | OTP를 요청한 userId  |
+| sendAccountPwd|  String     |      O      |   128 | userId의 password (Base64 인코딩필요) |
 | sendAccountId|  String     |      O      |   64 | 보내는 계좌의 Cbank Id |
-| sendAccountPwd|  String     |      O      |   128 | Login을 요청하는 password (Base64 인코딩필요) |
 | recvAccountId|  String     |      O      |   64 | 받는 계좌의 Id |
 | amount| Long     |      O      |   32 | 이체 하는 금액 |
 | transferHistory|  String     |      O      |   256 | 이체 내역 |
